@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Lab Wonders | Science Products</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <style>
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .robot-animation {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/4712/4712035.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: float 8s ease-in-out infinite;
+        }
+        .telescope-animation {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/3142/3142024.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: float 6s ease-in-out infinite 2s;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(5deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(-5deg);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-indigo-600 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold">maniram sir ko pasal 🧪</h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="hover:text-indigo-200">Products</a></li>
+                        <li><a href="#" class="hover:text-indigo-200">About</a></li>
+                        <li><a href="#" class="hover:text-indigo-200">Contact 98****654</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mt-16 text-center">
+                <h2 class="text-5xl font-bold mb-6">Revolutionary Science Products</h2>
+                <p class="text-xl max-w-2xl mx-auto">Cutting-edge laboratory equipment and scientific innovations for modern researchers</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="product-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <img src="http://static.photos/science/640x360/1" alt="Quantum Spectrometer" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Quantum Spectrometer</h3>
+                    <p class="text-gray-600 mb-4">Precision measurement for molecular analysis with 99.9% accuracy</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">View Details</button>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <img src="http://static.photos/technology/640x360/2" alt="Nano Centrifuge" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Nano Centrifuge</h3>
+                    <p class="text-gray-600 mb-4">Ultra-compact design with 30,000 RPM capacity</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">View Details</button>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <img src="http://static.photos/medical/640x360/3" alt="Bio Reactor" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Bio Reactor</h3>
+                    <p class="text-gray-600 mb-4">Automated cell culture system with AI monitoring</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">View Details</button>
+                </div>
+            </div>
+        </section>
+        <section class="bg-indigo-50 rounded-xl p-12 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Contact Us For More Details</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Our team of experts is ready to answer your questions about our products and services.</p>
+            <a href="mailto:info@quantumlabwonders.com" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 inline-block">Email Us</a>
+        </section>
+</main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Quantum Lab Wonders</h3>
+                    <p class="text-gray-400">Innovating science, one product at a time</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-semibold mb-4">Products</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Laboratory Equipment</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Measurement Devices</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Consumables</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Company</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Research</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 Quantum Lab Wonders. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="robot-animation" style="top: 20%; left: 5%;"></div>
+    <div class="telescope-animation" style="top: 30%; right: 5%;"></div>
+    <div class="robot-animation" style="bottom: 20%; right: 8%; transform: scaleX(-1);"></div>
+    
+    <script>
+        feather.replace();
+        
+        // Create more animated elements
+        function createFloatingElements() {
+            const container = document.body;
+            const elements = ['🧪', '🔬', '⚗️', '🧫', '🌡️', '🧬', '🦠', '👩‍🔬'];
+            
+            for (let i = 0; i < 10; i++) {
+                const element = document.createElement('div');
+                element.className = 'floating-science';
+                element.style.position = 'fixed';
+                element.style.fontSize = `${Math.random() * 20 + 10}px`;
+                element.style.opacity = Math.random() * 0.5 + 0.3;
+                element.style.left = `${Math.random() * 100}%`;
+                element.style.top = `${Math.random() * 100}%`;
+                element.style.zIndex = '-1';
+                element.textContent = elements[Math.floor(Math.random() * elements.length)];
+                
+                container.appendChild(element);
+                
+                anime({
+                    targets: element,
+                    translateX: {
+                        value: () => anime.random(-100, 100),
+                        duration: () => anime.random(8000, 12000),
+                        easing: 'easeInOutSine'
+                    },
+                    translateY: {
+                        value: () => anime.random(-50, 50),
+                        duration: () => anime.random(6000, 10000),
+                        easing: 'easeInOutSine'
+                    },
+                    rotate: {
+                        value: () => anime.random(-180, 180),
+                        duration: () => anime.random(5000, 8000),
+                        easing: 'easeInOutSine'
+                    },
+                    loop: true,
+                    direction: 'alternate'
+                });
+            }
+        }
+        
+        // Animate header elements on load
+        anime.timeline({
+            easing: 'spring(1, 80, 10, 0)'
+        })
+        .add({
+            targets: 'header h1',
+            translateY: [-30, 0],
+            opacity: [0, 1],
+            duration: 1200,
+        })
+        .add({
+            targets: 'nav a',
+            translateY: [-20, 0],
+            opacity: [0, 1],
+            delay: anime.stagger(150),
+            duration: 800,
+        })
+        .add({
+            targets: ['header h2', 'header p'],
+            translateY: [40, 0],
+            opacity: [0, 1],
+            duration: 1000,
+        });
+
+        createFloatingElements();
+        // Animate product cards on scroll with spring effect
+        const productCards = document.querySelectorAll('.product-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    anime({
+                        targets: entry.target,
+                        translateY: [80, 0],
+                        opacity: [0, 1],
+                        rotateZ: [anime.random(-10, 10), 0],
+                        delay: i * 100,
+                        duration: 1200,
+                        easing: 'spring(1, 80, 10, 0)'
+                    });
+                }
+            });
+        }, { threshold: 0.05 });
+productCards.forEach(card => observer.observe(card));
+        // Contact section animation with bouncy effect
+        const contactSection = document.querySelector('section.bg-indigo-50');
+        const contactObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    anime({
+                        targets: entry.target.querySelectorAll('*'),
+                        translateY: [50, 0],
+                        opacity: [0, 1],
+                        delay: anime.stagger(150, {start: 200}),
+                        duration: 1000,
+                        easing: 'spring(1, 80, 10, 0)'
+                    });
+                }
+            });
+        }, { threshold: 0.1 });
+contactObserver.observe(contactSection);
+        // Footer animation with staggered spring
+        const footer = document.querySelector('footer');
+        const footerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    anime({
+                        targets: entry.target.querySelectorAll('*'),
+                        translateY: [30, 0],
+                        opacity: [0, 1],
+                        delay: anime.stagger(80, {grid: [4, 3], from: 'center'}),
+                        duration: 800,
+                        easing: 'spring(1, 60, 10, 0)'
+                    });
+                }
+            });
+        }, { threshold: 0.05 });
+footerObserver.observe(footer);
+    </script>
+</body>
+</html>
